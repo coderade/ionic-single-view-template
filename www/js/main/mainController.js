@@ -3,6 +3,11 @@ ionicApp.controller("mainController", ['$scope', '$http',
     $http.get('data/data.json').success(
       function (data) {
         $scope.games = data;
+        $scope.moveGame = function (game, fromIndex, toIndex) {
+          $scope.games.splice(fromIndex, 1);
+          $scope.games.splice(toIndex, 0, game);
+
+        }
       }
     )
   }]);

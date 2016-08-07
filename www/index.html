@@ -24,24 +24,31 @@
   </head>
   <body ng-app="ionicApp">
 
-    <ion-pane>
+    <ion-pane ng-controller="mainController">
       <ion-header-bar class="bar-dark">
         <h2 class="title">Games List</h2>
+        <button class="button button-icon ion-navicon"
+        ng-click="data.showReorder = !data.showReorder">
+        </button>
       </ion-header-bar>
       <div class="bar bar-subheader item-input-inset bar-light">
         <label class="item-input-wrapper">
           <span class="icon ion-search placeholder-icon"></span>
-          <input type="search" placeholder="Search">
+          <input type="search" ng-model="query" placeholder="Search">
         </label>
       </div>
-      <ion-content ng-controller="mainController" class="has-subheader">
-        <ion-list>
-          <ion-item ng-repeat="game in games" class="item-thumbnail-left item-text-wrap" >
+      <ion-content  class="has-subheader">
+        <ion-list show-reorder="data.showReorder">
+          <ion-item ng-repeat='game in games | filter:query' class="item-thumbnail-left item-text-wrap" >
             <img src="img/{{game.slug}}.jpg" alt="{{game.name}} Photo">
             <h2><strong>{{game.name}}</strong></h2>
             <h3 >{{game.plataform}}</h3>
             <h4>{{game.year}}</h4>
-            <p>{{game.bio}}</p>
+            <p>{{game.bio | limitTo:200}}{{game.bio.length> 200 ? '&hellip;' : ''}}</p>
+            <ion-reorder-button class="ion-navicon"
+                                on-reorder="moveGame(game, $fromIndex, $toIndex)">
+
+            </ion-reorder-button>
           </ion-item>
         </ion-list>
       </ion-content>
