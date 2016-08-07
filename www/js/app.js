@@ -1,9 +1,6 @@
-// Ionic Starter App
+'use strict';
 
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
+var ionicApp = angular.module('ionicApp', ['ionic'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -21,4 +18,13 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
   });
-})
+});
+
+// .controller("MainController", ["$scope", "$http", function($scope, $http) {
+//   $http.get("https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699")
+//     .success(function (response) {
+//       console.log(response);
+//       $scope.sport = response.items;
+//     });
+// }]
+

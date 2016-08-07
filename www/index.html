@@ -20,8 +20,9 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    <script src="js/main/mainController.js"></script>
   </head>
-  <body ng-app="starter">
+  <body ng-app="ionicApp">
 
     <ion-pane>
       <ion-header-bar class="bar-dark">
@@ -33,17 +34,14 @@
           <input type="search" placeholder="Search">
         </label>
       </div>
-      <ion-content class="has-subheader">
+      <ion-content ng-controller="mainController" class="has-subheader">
         <ion-list>
-          <ion-item class="item-thumbnail-left item-text-wrap" >
-            <img src="http://placehold.it/100x100">
-            <h2>Name</h2>
-            <h3>The Legend of Zelda</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Accusamus distinctio dolores exercitationem incidunt, ipsa laudantium
-              libero magni nobis provident quae, quas quibusdam quis,
-              repudiandae sequi sit! Hic illum, reprehenderit. Autem?
-            </p>
+          <ion-item ng-repeat="game in games" class="item-thumbnail-left item-text-wrap" >
+            <img src="img/{{game.slug}}.jpg" alt="{{game.name}} Photo">
+            <h2><strong>{{game.name}}</strong></h2>
+            <h3 >{{game.plataform}}</h3>
+            <h4>{{game.year}}</h4>
+            <p>{{game.bio}}</p>
           </ion-item>
         </ion-list>
       </ion-content>
