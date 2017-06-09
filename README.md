@@ -1,4 +1,4 @@
-##Best Games Ever List - Ionic Single View App
+## Best Games Ever List - Ionic Single View App
 
 This project is a simple example created for didactic purposes that demonstrate a single view application developed using 
 Ionic.
@@ -42,4 +42,4 @@ Then navigate your browser to http://192.168.25.110:8100 to see the app running 
 
 ### About Ionic
 
-For more information on Ionic please check out [IONIC](http://ionicframework.com/).
+For more information on Ionic please check out [Ionic](http://ionicframework.com/).
