@@ -1,6 +1,6 @@
-## Best Games Ever List - Ionic Single View App
+## Best Games Ever List - Ionic Single View App Template
 
-This project is a simple example created for didactic purposes that demonstrate a single view application developed using 
+This project is a simple template created for didactic purposes that demonstrate a single view application developed using 
 Ionic.
 
 In this application you can search, reorder and delete your games.
@@ -22,6 +22,10 @@ Clone the repository and install the node modules.
 Install the Bower globally:
 
 `yarn global add bower`
+
+Install the Ionic globally:
+
+`yarn global add ionic`
 
 Install the Bower components:
 
