@@ -10,23 +10,22 @@ In this application you can search, reorder and delete your games.
 
 ## How to use
 
-Download and install the Node.Js and NPM using the [NVM](https://github.com/creationix/nvm) site.
+Download and install the Node.Js using the [NVM](https://github.com/creationix/nvm).
+
+Install the [yarn](https://yarnpkg.com/en/) following the official 
+[documentation](https://yarnpkg.com/lang/en/docs/install/#linux-tab).
 
 Clone the repository and install the node modules.
 
-`npm install`
+`yarn install`
 
 Install the Bower globally:
 
-`npm install -g bower`
+`yarn global add bower`
 
 Install the Bower components:
 
 `bower install`
-
-Install the Ionic globally:
-
-`npm install -g ionic`
 
 After this, you can run the application.
 
