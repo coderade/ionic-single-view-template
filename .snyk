@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.14.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -10,3 +10,30 @@ patch:
         patched: '2018-10-23T08:10:44.521Z'
     - gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
         patched: '2018-10-23T08:10:44.521Z'
+  'npm:hoek:20180212':
+    - gulp-sass > node-sass > request > hawk > hoek:
+        patched: '2020-01-16T11:33:30.744Z'
+    - gulp-sass > node-sass > request > hawk > boom > hoek:
+        patched: '2020-01-16T11:33:30.744Z'
+    - gulp-sass > node-sass > request > hawk > sntp > hoek:
+        patched: '2020-01-16T11:33:30.744Z'
+    - gulp-sass > node-sass > node-gyp > request > hawk > hoek:
+        patched: '2020-01-16T11:33:30.744Z'
+    - gulp-sass > node-sass > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-01-16T11:33:30.744Z'
+    - gulp-sass > node-sass > node-gyp > request > hawk > boom > hoek:
+        patched: '2020-01-16T11:33:30.744Z'
+    - gulp-sass > node-sass > node-gyp > request > hawk > sntp > hoek:
+        patched: '2020-01-16T11:33:30.744Z'
+    - gulp-sass > node-sass > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-01-16T11:33:30.744Z'
+  'npm:stringstream:20180511':
+    - gulp-sass > node-sass > request > stringstream:
+        patched: '2020-01-16T11:33:30.744Z'
+    - gulp-sass > node-sass > node-gyp > request > stringstream:
+        patched: '2020-01-16T11:33:30.744Z'
+  'npm:tough-cookie:20170905':
+    - gulp-sass > node-sass > request > tough-cookie:
+        patched: '2020-01-16T11:33:30.744Z'
+    - gulp-sass > node-sass > node-gyp > request > tough-cookie:
+        patched: '2020-01-16T11:33:30.744Z'
