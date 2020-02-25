@@ -41,7 +41,7 @@ You can use the Ionic to serve this apllication.
 
 To do this on the root of the project use the `ionic serve` command.
 
-Then navigate your browser to http://192.168.25.110:8100 to see the app running in your browser.
+Then navigate your browser to http://localhost:8100 to see the app running in your browser.
 
 
 ### About Ionic
