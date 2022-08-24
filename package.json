@@ -4,11 +4,11 @@
   "description": "ionicSinglePage: An Ionic project",
   "dependencies": {
     "gulp": "^4.0.0",
-    "gulp-sass": "^3.0.0",
+    "gulp-sass": "^5.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-minify-css": "^0.3.0",
     "gulp-rename": "^1.2.0",
-    "snyk": "^1.278.1"
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "bower": "^1.8.8",
@@ -25,7 +25,7 @@
   ],
   "cordovaPlatforms": [],
   "scripts": {
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepare": "yarn run snyk-protect"
   },
   "snyk": true
